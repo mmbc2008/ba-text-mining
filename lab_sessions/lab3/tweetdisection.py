@@ -32,7 +32,7 @@ for ind,link in enumerate(hyperlinks):
 
 with open('my_tweets.json', 'r') as f:
     file_data = json.load(f)
-    for i in range(1,50):
+    for i in range(1,51):
         file_data[str(i)]["text_of_tweet"] = text_data[i-1]
         file_data[str(i)]["tweet_url"] = hyperlinks[i-1]
         file_data[str(i)]["sentiment_label"] = sentiment[i-1]
